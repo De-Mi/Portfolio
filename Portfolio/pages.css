@@ -1,0 +1,280 @@
+
+    
+    			/* NAVIGATION BAR*/
+    			.sidenav {
+  					height: 100%;
+  					width: 0;
+  					position: fixed;
+ 	 				z-index: 1;
+  					top: 0; 
+  					left: 0;
+  					background-color: #111;
+  					overflow-x: hidden;
+  					transition: 0.5s;
+  					padding-top: 60px;
+				}
+				.sidenav-header {
+  					padding: 8px 8px 8px 32px;
+  					font-size: 25px;
+  					background-color:  gray;
+  					color: white;
+  					transition: 0.3s;
+  					display: block;
+  					text-decoration: none;
+				}
+				
+
+				.sidenav a {
+  					padding: 8px 8px 8px 32px;
+  					text-decoration: none;
+  					font-size: 25px;
+  					color: #818181;
+  					display: block;
+  					transition: 0.3s;
+  				}
+
+				.sidenav a:hover {
+  					color: #f1f1f1;
+				}
+
+				.sidenav .closebtn {
+  					position: absolute;
+  					top: 0;
+  					right: 25px;
+  					font-size: 36px;
+ 					margin-left: 50px;
+				}
+
+				
+
+				@media screen and (max-height: 450px) {.sidenav {padding-top: 15px;}.sidenav a {font-size: 18px;}}
+    
+    			.sticky{ position: -webkit-sticky;position: sticky;top: 0;}
+    			
+    			
+    			
+    			.content{
+    				background-color: white;
+    				padding: 50px;
+    				text-align: center;
+    				font-size: 60px;
+  					color: black;
+    			}
+    
+    			.button {
+  					border-radius: 1px;
+  					background-color: white;
+ 	 				border: none;
+  					color: black;
+  					text-align: center;
+  					font-size: 25px;
+  					padding: 20px;
+  					width: 200px;
+  					transition: all 0.5s;
+  					cursor: pointer;
+  					margin: 5px;
+				}
+
+				.button span {
+  					cursor: pointer;
+  					display: inline-block;
+  					position: relative;
+  					transition: 0.5s;
+				}
+
+				.button span:after {
+  					content: '\00bb';
+  					position: absolute;
+  					opacity: 0;
+  					top: 0;
+  					right: -20px;
+  					transition: 0.5s;
+				}
+
+				.button:hover span {padding-right: 25px;}
+
+				.button:hover span:after {opacity: 1;right: 0;}
+				/* Make the image fully responsive */
+   				.carousel-inner img {width: 100%;height: 100%;}
+  	
+  				/* The Modal (background) */
+				.modal {
+  					display: none; /* Hidden by default */
+  					position: fixed; /* Stay in place */
+  					z-index: 1; /* Sit on top */
+  					padding-top: 100px; /* Location of the box */
+  					left: 0;	 
+ 					top: 0;
+  					width: 100%; /* Full width */
+  					height: 100%; /* Full height */
+  					overflow: auto; /* Enable scroll if needed */
+  					background-color: rgb(0,0,0); /* Fallback color */
+  					background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+				}
+
+				/* Modal Content */
+				.modal-content {
+  					position: relative;
+  					background-color: white;
+ 	 				margin: auto;
+  					padding: 0;
+  					border: 1px solid #888;
+ 	 				width: 80%;
+  					box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ 	 				-webkit-animation-name: animatetop;
+  					-webkit-animation-duration: 0.4s;
+  					animation-name: animatetop;
+  					animation-duration: 0.4s
+				}
+
+				/* Add Animation */
+				@-webkit-keyframes animatetop {
+  					from {top:-300px; opacity:0} 
+  					to {top:0; opacity:1}
+				}
+
+				@keyframes animatetop {
+  					from {top:-300px; opacity:0}
+  					to {top:0; opacity:1}
+				}
+
+				/* The Close Button */
+				.close {
+  					color: gray;
+  					float: right;
+  					font-size: 28px;
+  					font-weight: bold;
+				}
+
+				.close:hover,
+				.close:focus {
+  					color: #000;
+  					text-decoration: none;
+  					cursor: pointer;
+				}
+				
+				.modal-header {
+  					padding: 10px 16px;
+  					background-color:  white;
+  					color: gray;
+				}
+
+				.modal-body {padding: 2px 16px;}
+
+				.modal-footer {
+  					padding: 2px 16px;
+  					background-color: white;
+  					color: gray;
+				}
+				/* SOCIAL MEDIA ICONS */
+ 				.fa {
+  					padding: 20px;
+  					font-size: 30px;
+  					width: 80px;
+  					text-align: center;
+  					text-decoration: none;
+  					margin: 5px 2px;
+  					border-radius: 50%;
+				}
+
+				.fa:hover {
+    				opacity: 0.7;
+				}
+
+				.fa-facebook {
+  					background: #3B5998;
+  					color: white;
+				}
+
+				.fa-twitter {
+ 	 				background: #55ACEE;
+  					color: white;
+				}
+
+				.fa-google {
+  					background: #dd4b39;
+  					color: white;
+				}
+
+				.fa-linkedin {
+  					background: #007bb5;
+  					color: white;
+				}
+
+				.fa-youtube {
+  					background: #bb0000;
+  					color: white;
+				}
+
+				.fa-instagram {
+  					background: #125688;
+  					color: white;
+				}
+
+
+				.fa-snapchat-ghost {
+  					background: #fffc00;
+  					color: white;
+  					text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+				}
+
+				.fa-skype {
+  					background: #00aff0;
+  					color: white;
+				}
+
+
+
+				.fa-tumblr {
+  					background: #2c4762;
+  					color: white;
+				}
+
+				.fa-vine {
+  					background: #00b489;
+  					color: white;
+				}
+
+				.fa-yahoo {
+  					background: #430297;
+  					color: white;
+				}
+
+				.fa-reddit {
+ 	 				background: #ff5700;
+  					color: white;
+				}
+
+	
+				.material-icons {
+  					font-family: 'Material Icons';
+  					font-weight: normal;
+  					font-style: normal;
+  					font-size: 24px;  /* Preferred icon size */
+  					display: inline-block;
+  					line-height: 1;
+  					text-transform: none;
+  					letter-spacing: normal;
+  					word-wrap: normal;
+  					white-space: nowrap;
+  					direction: ltr;
+  					text-rendering: optimizeLegibility;
+				}
+				/* Rules for using icons as white on a dark background. */
+				.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+				.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+  				
+  				
+  				
+  				
+  				/* MODAL HEADER*/
+  				
+  				
+  				/* FOOTER */
+    			footer{
+    				background-color: #C0C0C0;
+    				text-align: center;
+    				padding: 10px;
+  					font-size: 10px;
+  					color: #ddd;
+    			}

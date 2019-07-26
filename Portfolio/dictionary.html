@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type = "text/javascript">
+  //instruction typewriter effect
+			var i = 0;
+			var txt = 'Look up the definition of any word';
+			var speed = 50;
+			function typeWriter() {
+			
+  				if (i < txt.length) {
+    				document.getElementById("demo").innerHTML += txt.charAt(i);
+   				 	i++;
+    				return setTimeout(typeWriter, speed);
+  				}
+			}
+  </script>
+<title>Dictionary</title>
+<style type="text/css">
+
+section, body, html {
+	width: 100%;
+	height: 120%;
+	
+}
+header{
+	background-color: #E6E6FA;
+	height: 60px;
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	border-bottom: 1px solid #D0D0D0;
+}
+nav.navbar{
+font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+</style>
+</head>
+<body>
+<header>
+	<h1> MY DICTIONARY </h1>
+</header> 
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">More Options</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Most Searched Words</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Least Searched Words</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Learn New Words</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<br>
+
+<div class="container" class="typewriter">
+  <h1>Enter a word to look up the definition.</h1>
+</div>
+
+<!--
+<script type = "text/javascript" > typeWriter() </script>
+<form class="example">
+
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+-->
+</body>
+</html>
